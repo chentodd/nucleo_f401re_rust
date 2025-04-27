@@ -17,6 +17,8 @@ A small project that controls motor in velocity and position mode:
           - intp acc (unit: rad/s^2)
           - intp jerk (unit: rad/s^3)
          
+here is the small [demo](https://www.youtube.com/watch?v=yFSlLiT1AuA) 
+         
 ## Hardware
 
 - Motor: Nidec 24H BLDC motor 8 pins
@@ -24,14 +26,6 @@ A small project that controls motor in velocity and position mode:
 
 ## TODOS
 
-- [x] Read encoder values from motor
-- [x] Test pwm, drive motor with fixed duty cycle
-- [x] Test pid, control motor velocity
-- [x] Include `micropb`
-- [x] Define needed protobuf message to communicate with board
-- [x] Check S-curve motion interpolation, implement it on the board
-- [X] Create UI that reads controlled data and sends command to the board
-- [ ] Looking `postcard-rpc` and `rtt` to improve communication $\to$ working
 - [ ] Test IMU, read IMU settings $\to$ working
 - [ ] Implement and test PID auto tuning
 - [ ] Add a position control loop to minimize position error between actual position and interpolated position
